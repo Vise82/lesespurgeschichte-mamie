@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Une surprise pour Mamie - Lesespurgeschichte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Une surprise pour Mamie</h1>
+            <div id="path-display">Dein Weg: <span id="path">1</span></div>
+            <button id="reset-btn" class="reset-button" onclick="resetProgress()">🔄 Neu starten</button>
+        </header>
+        
+        <main id="story-content">
+            <!-- Wird dynamisch gefüllt -->
+        </main>
+        
+        <div id="help-cards" class="hidden">
+            <h3>📚 Hilfskarten</h3>
+            
+            <div class="help-card">
+                <h4>La famille</h4>
+                <ul>
+                    <li>la mère = die Mutter</li>
+                    <li>le père = der Vater</li>
+                    <li>le frère = der Bruder</li>
+                    <li>la sœur = die Schwester</li>
+                    <li>le bébé = das Baby</li>
+                    <li>la grand-mère = die Großmutter</li>
+                    <li>le grand-père = der Großvater</li>
+                </ul>
+            </div>
+            
+            <div class="help-card">
+                <h4>Im Haus</h4>
+                <ul>
+                    <li>la cuisine = die Küche</li>
+                    <li>le salon = das Wohnzimmer</li>
+                    <li>la maison = das Haus</li>
+                    <li>préparer = vorbereiten</li>
+                    <li>chercher = suchen</li>
+                    <li>arriver = ankommen</li>
+                </ul>
+            </div>
+            
+            <div class="help-card">
+                <h4>Boulangerie</h4>
+                <ul>
+                    <li>la boulangerie = die Bäckerei</li>
+                    <li>la boulangère = die Bäckerin</li>
+                    <li>Je voudrais … = Ich möchte …</li>
+                    <li>un gâteau = ein Kuchen</li>
+                    <li>au chocolat = Schokoladen-</li>
+                    <li>aux fraises = mit Erdbeeren</li>
+                    <li>s'il vous plaît = bitte</li>
+                </ul>
+            </div>
+            
+            <div class="help-card">
+                <h4>Geburtstag</h4>
+                <ul>
+                    <li>l'anniversaire = der Geburtstag</li>
+                    <li>Joyeux anniversaire ! = Alles Gute zum Geburtstag!</li>
+                    <li>Quel âge a … ? = Wie alt ist … ?</li>
+                    <li>Elle a … ans. = Sie ist … Jahre alt.</li>
+                    <li>la surprise = die Überraschung</li>
+                </ul>
+            </div>
+            
+            <div class="help-card">
+                <h4>Zahlen</h4>
+                <ul>
+                    <li>quatre = vier</li>
+                    <li>huit = acht</li>
+                    <li>dix = zehn</li>
+                    <li>vingt = zwanzig</li>
+                    <li>soixante-dix = siebzig</li>
+                </ul>
+            </div>
+        </div>
+        
+        <button id="help-btn" class="help-button">💡 Hilfskarten</button>
+    </div>
+    
+    <!-- Konfetti-Bibliothek ZUERST laden -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    
+    <!-- Dann dein eigenes Script -->
+    <script src="script.js"></script>
+</body>
+</html>
